@@ -1,0 +1,80 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: green;
+    color: white;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar li a:hover {
+    color: orange;
+}
+
+.mainbody {
+    display: flex;
+}
+.main {
+    /* //width: 600px; */
+    padding: 10px;
+}
+
+.side {
+    /* width: 200px; */
+    padding: 5px;
+}
+
+.quadrants div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.quadrant {
+    width: 250px;
+    height: 100px;
+    color: white;
+    background: blue;
+}
+.solution {
+    background-color: skyblue;
+}
+.shortlist {
+    background-color: orangered;
+}
+.first {
+    background-color: greenyellow
+}
+.created {
+    background-color: blue;
+}
+
+.quadrant-title {
+    font-size: 2rem;
+}
+
+
+@media only screen and (max-width: 420px) {
+    .quadrants div{
+        flex-direction: column;
+    }
+}
